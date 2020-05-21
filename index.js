@@ -51,7 +51,7 @@ module.exports = {
         return this._exec(
           `NETLIFY_AUTH_TOKEN=${authToken} ` +
           `NETLIFY_SITE_ID=${siteId} ` +
-          `node_modules/.bin/netlify ${command} ${commandOptions.join(' ')}`
+          `npx netlify ${command} ${commandOptions.join(' ')}`
         );
       },
 
